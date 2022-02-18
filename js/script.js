@@ -1,15 +1,19 @@
-'use sctrict';
+const numberOfFilms = +prompt('How many movies did you watch?', '');
 
-let number = 4.6;
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-console.log(-4/0);
-console.log('string' * 9);
+const a = prompt('Your last movie?', ''),
+      b = prompt('How will you estimate it?', ''),
+      c = prompt('Your last movie?', ''),
+      d = prompt('How will you estimate it?', '');
 
-const persone = 'alex';
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-const bool = true;
-
-console.log('something');
-
-let und;
-console.log(und);
+console.log(personalMovieDB);
